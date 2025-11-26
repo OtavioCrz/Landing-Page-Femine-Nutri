@@ -1,0 +1,9 @@
+/* Estilos base / globais */
+body {
+    background-color: #FFFBF8;
+    color: #5C3131;
+}
+
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,83 @@
+<section id="contato" class="py-20 px-4 md:px-12 bg-brand-bg">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start contact-card">
+        <!-- Texto lateral -->
+        <div class="space-y-4">
+            <h2 class="font-serif text-3xl md:text-4xl text-brand-primary">
+                Agende sua consulta
+            </h2>
+            <p class="font-sans text-sm text-brand-primary/80 leading-relaxed">
+                Envie uma mensagem diretamente pelo WhatsApp da
+                <strong>Dra. Kimberly Virginin</strong> e conte um pouco sobre seu objetivo.
+            </p>
+            <ul class="text-sm text-brand-primary/80 space-y-2 mt-4">
+                <li>• Emagrecimento saudável</li>
+                <li>• Reeducação alimentar</li>
+                <li>• Saúde da mulher</li>
+                <li>• Nutrição clínica e bem-estar</li>
+            </ul>
+            <p class="text-xs text-brand-primary/60 mt-4">
+                Resposta em horário comercial. Seu contato é confidencial.
+            </p>
+        </div>
+
+        <!-- Formulário -->
+        <form id="whatsapp-form" class="space-y-4">
+            <div>
+                <label class="contact-label" for="nome">Nome completo</label>
+                <input
+                    id="nome"
+                    name="nome"
+                    type="text"
+                    class="contact-input"
+                    placeholder="Como você prefere ser chamada(o)?"
+                    required
+                >
+            </div>
+
+            <div>
+                <label class="contact-label" for="telefone">WhatsApp</label>
+                <input
+                    id="telefone"
+                    name="telefone"
+                    type="tel"
+                    class="contact-input"
+                    placeholder="(DDD) 9 9999-9999"
+                    required
+                >
+            </div>
+
+            <div>
+                <label class="contact-label" for="objetivo">Seu objetivo</label>
+                <select id="objetivo" name="objetivo" class="contact-input">
+                    <option value="Emagrecimento saudável">Emagrecimento saudável</option>
+                    <option value="Reeducação alimentar">Reeducação alimentar</option>
+                    <option value="Saúde da mulher">Saúde da mulher</option>
+                    <option value="Nutrição clínica geral">Nutrição clínica geral</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="contact-label" for="mensagem">Mensagem</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="4"
+                    class="contact-input resize-none"
+                    placeholder="Conte um pouco sobre sua rotina, dúvidas ou histórico de saúde…"
+                ></textarea>
+            </div>
+
+            <button
+                type="submit"
+                class="service-card text-center p-6 rounded-[30px] bg-[#D48484] text-white shadow-xl transform md:-translate-y-4 relative"
+            >
+                Enviar mensagem pelo WhatsApp
+            </button>
+
+            <p class="text-[11px] text-brand-primary/60 text-center">
+                Ao clicar, você será redirecionada(o) para o WhatsApp com a mensagem preenchida.
+            </p>
+        </form>
+    </div>
+</section>
